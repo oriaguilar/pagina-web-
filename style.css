@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    background-color: #ffffff;
+    }
+
+    /* Barra superior */
+    .navbar {
+    background-color: #3B6E35;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    }
+
+    .logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    }
+
+    .escudo {
+    height: 55px;
+    width: auto;
+    }
+
+    .logo h1 {
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    }
+
+    .logo span {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    }
+
+    .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    }
+
+    .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+    opacity: 0.8;
+    }
+
+    /* Banner verde claro (Hero) */
+    .hero {
+    background-color: #EAF3E4;
+    padding: 85px 20px;
+    text-align: center;
+    }
+
+    .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    }
+
+    .hero h2 {
+    font-family: 'Georgia', serif;
+    color: #3B6E35;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    }
+
+    .hero p {
+    color: #555555;
+    font-size: 1.15rem;
+    }
+
+    /* Contenido y secciones */
+    .container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    }
+
+    .seccion {
+    margin-bottom: 40px;
+    }
+
+    .seccion-titulo {
+    font-family: 'Georgia', serif;
+    color: #3B6E35;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    }
+
+    .linea-decorativa {
+    width: 100%;
+    height: 1px;
+    background-color: #D7E8CB;
+    margin-bottom: 20px;
+    }
+
+    .seccion p {
+    font-size: 1.1rem;
+    color: #222222;
+    }
+
+    /* Tarjetas de novedades */
+    .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    }
+
+    .tarjeta {
+    background-color: #F4F9F0;
+    border: 1px solid #D7E8CB;
+    border-radius: 8px;
+    padding: 20px;
+    }
+
+    .tarjeta h3 {
+    font-family: 'Georgia', serif;
+    color: #3B6E35;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    }
+
+    .tarjeta p {
+    font-size: 0.95rem;
+    color: #444444;
+    }
+
+    /* Formulario de contacto */
+    .form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 420px;
+    }
+
+    .campo label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555555;
+    margin-bottom: 4px;
+    }
+
+    .campo input,
+    .campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    }
+
+    .form-contacto button {
+    background-color: #3B6E35;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: fit-content;
+    }
+
+    .form-contacto button:hover {
+    opacity: 0.85;
+    }
+
+    /* Pie de página */
+    .pie {
+    background-color: #3B6E35;
+    color: #E4F0DE;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    }
+
+    /* Responsive: en pantallas angostas, 1 columna */
+    @media (max-width: 700px) {
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+    }
